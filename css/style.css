@@ -926,6 +926,9 @@ body.offcanvas {
     .work-menu span a.active {
       color: #2c98f0; }
 
+.bg1{
+  background-image: url('../images/img-2.jpg');
+}
 .project {
   background-size: cover;
   background-position: center center;
