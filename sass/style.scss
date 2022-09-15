@@ -28,9 +28,7 @@ $brand-overlay-color: #3b3d40;
 $brand-bg-color: $brand-white;
 
 $input-border-focus:  $brand-primary !default;
-$form-group-margin-bottom:       30px !default;
-
-
+$form-group-margin-bottom: 30px !default;
 
 // Mixin
 @mixin translateX($translatex) {
@@ -104,15 +102,6 @@ $form-group-margin-bottom:       30px !default;
 @import 'bootstrap/mixins';
 @import 'bootstrap/variables';
 
-
-
-
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
 
 // Template Base
 body {
@@ -224,6 +213,8 @@ figure {
 			padding-right: .3em;
 		}
 	}
+	  
+	  
 	#main-menu {
 		display: block;
 		width: 100%;
