@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "scss": "sass --watch input.scss:output.css"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,6 @@
   "homepage": "https://github.com/Saiful-Islam45/saiful-s-portfolio#readme",
   "devDependencies": {
     "parcel": "^2.7.0",
-    "sass": "^1.54.9"
+    "sass": "^1.69.5"
   }
 }

@@ -5,12 +5,6 @@
   font-weight: normal;
   font-style: normal; }
 
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
@@ -286,7 +280,7 @@ figure {
         display: table-cell;
         vertical-align: middle;
         min-height: 500px;
-        padding: 2.5em;
+        padding: 1em 1.5em;
         position: relative; }
         @media screen and (max-width: 768px) {
           #hero .flexslider .slider-text > .slider-text-inner {
@@ -472,6 +466,7 @@ body.offcanvas {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 5px;
+  text-align: justify !important;
   font-weight: 500; }
 
 .hire {
