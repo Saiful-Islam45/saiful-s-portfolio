@@ -74,15 +74,19 @@
 			</aside>
 
 			<div id="main">
-				<section id="hero" class="js-fullheight" style="height: 420px !important;" data-section="hero">
+				<section id="hero" class="js-fullheight" data-section="hero">
 					<div class="flexslider">
-						<ul class="slides">
-							<li style="background-image: url(images/img_bg_1.jpg);">
+						<ul class="slides js-fullheight">
+							<li style="background-image: url(images/img_bg_1.jpg);
+							background-repeat: no-repeat;
+							background-attachment: fixed;
+							background-size: 150% 150%;
+							color: #FFFFFF;">
 								<div class="overlay"></div>
 								<div class="container-fluid">
 									<div class="row">
 										<div class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
-											<div class="slider-text-inner js-fullheight">
+											<div class="slider-text-inner">
 												<div class="desc">
 													<h1>Hi! <br>I'm Saiful</h1>
 													<h2>Welcome to my Personal Development Era.</h2>
@@ -171,9 +175,12 @@
 						</div>
 					</div>
 				</section>
-				<section class="skills" data-section="skills" style="height: 400px">
-					<div class="tag">
-						AWS Lambda
+				<section class="skills narrow-content" data-section="skills">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animated fadeInLeft">
+							<span class="heading-meta">Skills</span>
+							<h2 class="heading animated">My Weapons</h2>
+						</div>
 					</div>
 					<div class="tag">
 						Dynamodb
@@ -307,11 +314,29 @@
 							</div>
 						</div>
 						<div class="row">
+							<div class="col-md-6 animated fadeInTop">
+								<div class="project" style="background-image: url(images/pc.png) !important;">
+									<div class="desc">
+										<div class="con">
+											<h3><a href="https://nextjs-pc-builder-three.vercel.app/">Dream PC Builder</a></h3>
+											<span>Technology: NextJs, next-auth, ExpressJs, Mongoose, Redux toolkit with RTK query, firebase
+												authentication
+											</span>
+											<p class="icon">
+												<span><a href="https://nextjs-pc-builder-three.vercel.app/"><i class="icon-eye"></i> Live
+														Demo</a></span>
+												<span><a href="https://github.com/Saiful-Islam45/nextjs-pc-builder"><i class="icon-github"></i>
+														Github</a></span>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div class="col-md-6 animated fadeInLeft">
 								<div class="project bg1">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="https://hot-onion-restaurant-a3465.web.app/">Hot Onion Restaurant</a></h3>
+											<h3><a href="https://nextjs-pc-builder-three.vercel.app/">Hot Onion Restaurant</a></h3>
 											<span>Technology: HTML, Css, Bootstrap,,NodejS,Express.js,Stripe Payment System,MongoDB.</span>
 											<p class="icon">
 												<span><a href="https://hot-onion-restaurant-a3465.web.app"><i class="icon-eye"></i> Live
@@ -431,6 +456,48 @@
 						<div class="row">
 							<div class="col-md-4 col-sm-6 animated fadeInLeft">
 								<div class="blog-entry">
+									<a href="blog.html" class="blog-img"><img src="images/nlp.png" class="img-responsive" alt=""></a>
+									<div class="desc">
+										<span><small>March 22, 2023 </small> | <small> NLP Tutorial</small> | <small> 5 min
+												read</small></span>
+										<h3><a href="blog.html">NLP Tutorial Part-01</a></h3>
+										<p>NLP stands for Natural Language Processing, which is a field of computer science...</p>
+										<a href="https://medium.com/@saiful-islam-ice-45/nlp-tutorial-part-1-6d6288164fc2"
+											class="btn btn-info">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animated fadeInTop">
+								<div class="blog-entry">
+									<a href="blog.html" class="blog-img"><img src="images/go.webp" class="img-responsive" alt=""></a>
+									<div class="desc">
+										<span><small>February 02, 2023 </small> | <small> Golang</small> | <small> 5 min
+												read</small></span>
+										<h3><a href="blog.html">Learn Golang from ChatGPT</a></h3>
+										<p>Today we will learn how to learn something new with the help of chatGPT...</p>
+										<a href="https://medium.com/@saiful-islam-ice-45/learn-golang-from-chatgpt-29c80c0b7dec"
+											class="btn btn-info">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animated fadeInRight">
+								<div class="blog-entry">
+									<a href="blog.html" class="blog-img"><img src="images/code-smell.webp" class="img-responsive"
+											alt=""></a>
+									<div class="desc">
+										<span><small>January 18, 2023 </small> | <small> Clean code</small> | <small> 5 min
+												read</small></span>
+										<h3><a href="blog.html">Does your code smell bad?</a></h3>
+										<p>Before we get
+											Before we get into the code smell, imagine the name of any of your coworkers you want to punch for
+											bad code. I assume you have a lot in mind...</p>
+										<a href="https://medium.com/@saiful-islam-ice-45/do-you-have-code-smell-in-your-code-d211e529de9b"
+											class="btn btn-info">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 animated fadeInLeft">
+								<div class="blog-entry">
 									<a href="blog.html" class="blog-img"><img src="images/blog-1.jpg" class="img-responsive"
 											alt="HTML5 Bootstrap Template by portfolio.com"></a>
 									<div class="desc">
@@ -540,8 +607,7 @@
 													placeholder="Message"></textarea>
 											</div>
 											<div class="form-group">
-												<input type="submit" onclick="sendMail()" class="btn btn-primary btn-send-message"
-													value="Send Message">
+												<button onclick="sendMail()" class="btn btn-primary btn-send-message">Send Message</button>
 											</div>
 										</form>
 									</div>
@@ -574,32 +640,31 @@
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
-	<script src="js/mail.js">
-		{
-			function sendMail() {
-				var params = {
-					name: document.getElementById("name").value,
-					email: document.getElementById("email").value,
-					subject: document.getElementById("subject").value,
-					message: document.getElementById("message").value,
-				};
-				console.log("==============params=============", params);
-				const serviceID = "service_o0gdfp8";
-				const templateID = "template_ijcnsh1";
+	<script>
+		function sendMail() {
+			var params = {
+				name: document.getElementById("name").value,
+				email: document.getElementById("email").value,
+				subject: document.getElementById("subject").value,
+				message: document.getElementById("message").value,
+			};
+			localStorage.setItem('myData', JSON.stringify(params));
+			const serviceID = "service_o0gdfp8";
+			const templateID = "template_ijcnsh1";
+			alert("Thank you So much for your message. I will  reach you soon.");
+			emailjs.send(serviceID, templateID, params)
+				.then(res => {
+					console.log("==============res=============", res);
+					document.getElementById("name").value = "";
+					document.getElementById("email").value = "";
+					document.getElementById("subject").value = "";
+					document.getElementById("message").value = "";
+					console.log(res);
+					alert("Thank you So much for your message. I will  reach you soon.", res);
 
-				emailjs.send(serviceID, templateID, params)
-					.then(res => {
-						document.getElementById("name").value = "";
-						document.getElementById("email").value = "";
-						document.getElementById("subject").value = "";
-						document.getElementById("message").value = "";
-						console.log(res);
-						alert("Thank you So much for your message. I will  reach you soon.");
+				})
+				.catch(err => console.log(err));
 
-					})
-					.catch(err => console.log(err));
-
-			}
 		}
 	</script>
 
